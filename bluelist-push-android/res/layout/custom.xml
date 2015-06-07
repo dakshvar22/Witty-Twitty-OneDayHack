@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+
+    android:paddingRight="@dimen/activity_horizontal_margin">
+    <LinearLayout
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:background="@drawable/pictogramas_tipograficos_twit2"></LinearLayout>
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="18dp"
+        android:text="We Suggest.."
+        />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="my tweet.."
+        android:textSize="14dp"
+        android:padding="10dp"
+        />
+    <TextView
+        android:id="@+id/appGeneratedTweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:textSize="18dp"
+        android:text=" Auto Tweet "
+        android:textColor="@color/TwitterVerified"
+        android:clickable="true"
+        android:padding="26dp"
+        android:onClick="appGenTweet" />
+
+
+    <EditText
+        android:id="@+id/edit"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:hint="Or.....Enter your own customized tweet"
+        android:padding="10dp"
+        android:textSize="14dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/customTweetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Tweet "
+            android:clickable="true"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"
+            android:padding="26dp"
+            android:textColor="@color/TwitterVerified"
+            android:onClick="customTweet"
+            />
+        <TextView
+            android:id="@+id/cancelTweetButton"
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:padding="26dp"
+            android:text=" Cancel "
+            android:clickable="true"
+            android:textColor="@color/TwitterVerified"
+            android:textSize="18dp"
+            android:onClick="cancelTweet"
+            android:layout_marginTop="10dp">
+
+        </TextView>
+        <!--android:background="@drawable/background">-->
+    </LinearLayout>
+
+</LinearLayout>

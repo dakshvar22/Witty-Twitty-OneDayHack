@@ -1,0 +1,8 @@
+  host: oneDayHack
+  disk: 512M
+  name: my_bluemix_app_name
+  command: node app.js
+  path: .
+  domain: mybluemix.net
+  memory: 128M
+  instances: 1
